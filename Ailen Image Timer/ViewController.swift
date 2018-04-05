@@ -12,7 +12,8 @@ class ViewController: UIViewController {
 
     var counter = 1
     var myTimer = Timer()
-    
+    var chk = true
+    var direction = true
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var numberLabel: UILabel!
@@ -28,11 +29,21 @@ class ViewController: UIViewController {
     }
 
     @IBAction func button(_ sender: UIButton) {
-        myTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(ViewController.doAnimation) , userInfo: nil, repeats: true)
+   
+        if chk == true {
+            myTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(ViewController.doAnimation) , userInfo: nil, repeats: true)
+            chk = false
+        } else if chk == false {
+            myTimer.invalidate()
+            chk = true
+        }
+        
+  
+        
     }
     
     @IBAction func buttonStop(_ sender: UIButton) {
-        myTimer.invalidate()
+        
     }
     
     // Timer에 의해 동적으로 호출되는 함수

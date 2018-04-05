@@ -30,19 +30,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuQ-yL-izM">
-                                <rect key="frame" x="85" y="412" width="85" height="36"/>
+                                <rect key="frame" x="145" y="406" width="100" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="타이머 실행"/>
+                                <state key="normal" title="타이머 실행/중지"/>
                                 <connections>
                                     <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="08X-Tp-QOz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Tj-WW-cNP">
-                                <rect key="frame" x="219" y="415" width="85" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="타이머 중지"/>
-                                <connections>
-                                    <action selector="buttonStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zVL-K1-Y1w"/>
                                 </connections>
                             </button>
                         </subviews>
